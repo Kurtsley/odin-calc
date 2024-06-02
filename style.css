@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.calc-outline {
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    width: 400px;
+    height: 600px;
+    box-sizing: border-box;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: solid black 2px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.calc-inner {
+    display: flex;
+    border: solid black 2px;
+    margin: 24px;
+    justify-content: stretch;
+    flex: 1;
+}
+
+.keypad-column {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1 1 80%;
+    margin: 10px;
+    margin-bottom: 14px;
+}
+
+.operator-column {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex: 1 1 20%;
+    margin: 10px;
+}
+
+#keypad {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    box-sizing: border-box;
+    margin: 4px;
+    flex: 0 0 60%;
+    justify-content: center;
+}
+
+.bottom-row {
+    display: flex;
+    height: 80px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#btn-zero {
+    display: flex;
+    border: solid black 2px;
+    box-sizing: border-box;
+    width: 60px;
+    min-height: 80px;
+    aspect-ratio: 1;
+    margin-right: 23px;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-period {
+    display: flex;
+    border: solid black 2px;
+    box-sizing: border-box;
+    width: 60px;
+    min-height: 80px;
+    margin-right: 8px;
+    aspect-ratio: 1;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.operator-column div {
+    display: flex;
+    margin: 4px;
+    border: solid black 2px;
+    aspect-ratio: 1;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+#btn-clear {
+    margin-bottom: 24px;
+}
+
+#btn-eq {
+    margin-top: 24px;
+}
+
+#keypad div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 20px;
+    width: 60px;
+    min-height: 80px;
+    margin: 4px;
+}
